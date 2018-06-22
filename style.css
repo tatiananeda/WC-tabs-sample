@@ -1,0 +1,7 @@
+*:not(:defined) {
+    display: none;
+}
+
+nav {
+    display: flex;
+}

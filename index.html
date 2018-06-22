@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="components/templates/tab-nav.html" id="tab-nav">
+    <link rel="import" href="components/templates/tab-content.html" id="tab-content">
+</head>
+<body>
+
+<tab-element>
+    <nav>
+        <tab-nav-item class="active" target="First tab">
+            <h3>First</h3>
+            <p>example tab</p>
+        </tab-nav-item>
+        <tab-nav-item target="Second tab">
+            <h3>Second</h3>
+            <p>example tab</p>
+        </tab-nav-item>
+        <tab-nav-item target="Third tab">
+            <h3>Third</h3>
+            <p>example tab</p>
+        </tab-nav-item>
+    </nav>
+
+    <tab-content-item class='active' target="First tab">
+        <div>
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio dolor magnam nisi perspiciatis quas reiciendis soluta.</p>
+           <p>Cumque neque numquam placeat provident soluta suscipit! Accusamus autem ex in repellat. Vero!</p>
+        </div>
+    </tab-content-item>
+    <tab-content-item target="Second tab">
+        <div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio dolor magnam nisi perspiciatis quas reiciendis soluta.</p>
+            <p>Cumque neque numquam placeat provident soluta suscipit! Accusamus autem ex in repellat. Vero!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <p>A amet, beatae consequuntur corporis cumque eveniet impedit molestias natus nihil nostrum officia quaerat, qui quidem, reiciendis unde vitae voluptas voluptatem. Quae.</p>
+        </div>
+    </tab-content-item>
+    <tab-content-item target="Third tab">
+        <div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus distinctio dolor magnam nisi perspiciatis quas reiciendis soluta.</p>
+            <p>Cumque neque numquam placeat provident soluta suscipit! Accusamus autem ex in repellat. Vero!</p>
+            <p>A amet, beatae consequuntur corporis cumque eveniet impedit molestias natus nihil nostrum officia quaerat, qui quidem, reiciendis unde vitae voluptas voluptatem. Quae.</p>
+        </div>
+    </tab-content-item>
+</tab-element>
+
+<script src="components/scripts/tab-element.js"></script>
+<script src="components/scripts/tab-nav.js"></script>
+<script src="components/scripts/tab-content.js"></script>
+</body>
+</html>

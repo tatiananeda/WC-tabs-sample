@@ -1,0 +1,18 @@
+<template id="tab-nav">
+    <style>
+        :host{
+            padding: 10px;
+            background-color: rgb(81,180,186);
+            transition: background-color 1s;
+            text-align: center;
+        }
+        :host-context(.active) {
+            background-color: rgb(93, 209, 216);
+        }
+        a{
+            text-decoration: none;
+            color: rgb(3,32,40);
+        }
+    </style>
+    <a href="#${this._target}"><slot></slot></a>
+</template>

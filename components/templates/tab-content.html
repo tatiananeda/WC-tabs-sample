@@ -1,0 +1,15 @@
+<template id="tab-content">
+    <style>
+        :host {
+            display: none;
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(255,212,201);
+            transition: all 1s;
+        }
+        :host-context(.active){
+            display: block;
+        }
+    </style>
+    <div><slot></slot></div>
+</template>
